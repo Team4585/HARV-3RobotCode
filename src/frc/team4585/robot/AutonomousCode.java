@@ -8,34 +8,35 @@ import edu.wpi.first.wpilibj.SimpleRobot;
 public class AutonomousCode extends SimpleRobot 
 {
     
-   //Declaration Section
-     private final RobotDrive RobotHarvey; 
-   
+    //Declaration Section
+    private final RobotDrive RobotHarvey;
     
-   //Constructor Section
+    //Constructor Section
     public AutonomousCode()
     {
-      //Initalization section
-        
-      //RobotDrive(int frontLeftMotor, int rearLeftMotor, int frontRightMotor, int rearRightMotor)
+        //Initalization section
         RobotHarvey = new RobotDrive(1,2,3,4);
     }
     
     /**
-    * Autonomous code goes here. <br>
-    */ 
+     * 
+     */
     public void executeCode()
     {
-      //While robot is in autonomous mode and enabled, run this loop indefinitely
+        //While the robot is in autonomous mode and enabled, call methods indefinitely
         while(isAutonomous() && isEnabled()) 
         {
-          //Do Autonomous things!
-          //Call Autonomous Methods here!
-            
-           RobotHarvey.tankDrive(0,0); //remember to update RobotHarvey at end of loop 
+            //Call Autonomous Methods here!
+            yourMethod();
         }
     }
     
+    public void yourMethod()
+    {
+      //Do Autonomous Stuff!
+      //after your method does something update RobotHarvey!
+      RobotHarvey.tankDrive(0,0);
+    }
     
     
 }

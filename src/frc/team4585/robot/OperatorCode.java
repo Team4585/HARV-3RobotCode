@@ -13,39 +13,41 @@ import edu.wpi.first.wpilibj.SimpleRobot;
  *
  * @author 
  */
-public class OperatorCode extends SimpleRobot {
+public class OperatorCode extends SimpleRobot 
+{
     
     //Declaration Section
     private final RobotDrive RobotHarvey;
   
     
-    
+    /**
+     * Initializes RobotHarvey
+     */
     public OperatorCode()
     {
-      //Initalization section
+        //Initalization section
         RobotHarvey  = new RobotDrive(1,2,3,4);    
     }
     
-   /**
-    * Operator code goes here. <br>
-    */ 
+    /**
+     * Called when robot enters operatorMode.
+     */
    public void executeCode()
    {
-     //Loops indefinitely until one condition is false 
+       //While the robot is in operator mode and enabled, call your methods and code indefiniatly 
        while(isOperatorControl() && isEnabled())
        {
-           //Do Whatever the Human Wants!
-           //Call Your Methods here!
-           
-           
-           RobotHarvey.tankDrive(0,0);// Remeber to update RobotHarvey at the end of any method/loop
+            //Call Your Methods here          
+            yourMethod();           
        }       
    }
    
-   
-   
-   
-   
+   public void yourMethod()
+   {
+       //your code goes here
+       //after your code does something update RobotHarvey 
+         RobotHarvey.tankDrive(0,0);
+   }
   
     
 }

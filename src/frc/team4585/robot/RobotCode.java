@@ -1,36 +1,44 @@
 
 package frc.team4585.robot;
 
+import edu.wpi.first.wpilibj.RobotDrive;
+import edu.wpi.first.wpilibj.Sendable;
 import edu.wpi.first.wpilibj.SimpleRobot;
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 /**
- *  Overrides autonomous(), operatorControl(), and test() from SimpleRobot <br>
+ * Overrides autonomous(), operatorControl(), and test() from SimpleRobot 
  * <br>
- *  Each method calls its Instantiated subclass method executeCode() <br>
- *  Code has been structured this way for organization and team purposes
+ * <br> Each method calls its Instantiated subclass method executeCode()       
+ * <br> Code has been structured this way for organization and team purposes   
+ * <br><b>Ask Before Modifying Please</b>
  * 
  * @author Ivan Tachini
  * @version 0.3 
- * @since 10/15/2014
+ * @since 10/27/2014
  */
 
 public class RobotCode extends SimpleRobot
 {   
  
-  //private final  ObjectName
-    private final AutonomousCode  AutonomousCode;
-    private final OperatorCode    OperatorCode;
-    private final TestCode        TestCode;
+  //private final Class Instances |  Instance Name
+    private final AutonomousCode   AutonomousCode;
+    private final OperatorCode     OperatorCode;
+    private final TestCode         TestCode;
+    private static boolean isDebugModeOn;
     
     /**
-     * Initializes Objects AutonomousCode, OperatorCode and TestCode
+     * Instances AutonomousCode, OperatorCode and TestCode
      */
     public RobotCode()
     {   
-       //ObjectName    = new InstanceOfClass(Arguments);
+       //InstanceName  = new InstanceOfClass(Arguments);
         AutonomousCode = new AutonomousCode();
         OperatorCode   = new OperatorCode();
         TestCode       = new TestCode();
+        isDebugModeOn      = false; //Start disabled
+        UpdateSmartDashboard();
+       
     } 
      
      /**
@@ -68,6 +76,44 @@ public class RobotCode extends SimpleRobot
     {
        TestCode.executeCode();
     }
+    
+    /**
+     * Allows outside Classes to get isDebugModeOn
+     * @return True/False isDebugModeOn
+     */
+    public static boolean getDebugMode()
+    {
+       return isDebugModeOn;
+    }
+    
+    /**
+     * Creates a Button that upon being pressed Toggles isDebugModeOn 
+ to be true if false and vice versa
+     * @return null
+     */
+    public Sendable ToggleDebugMode()
+    {
+        isDebugModeOn = !isDebugModeOn;       
+        return null;
+    }
+    
+    /**
+    * Updates SmartDashboard with Values and Buttons
+    */ 
+    public final void UpdateSmartDashboard()  
+    {
+        if(!isDebugModeOn) //If False put button to turn on 
+        {
+          SmartDashboard.putData("Turn Debug Mode On",new RobotCode().ToggleDebugMode());
+        }
+        else           // If True put button to turn off
+        { 
+          SmartDashboard.putData("Turn Debug Mode Off",new RobotCode().ToggleDebugMode());
+        }  
+        
+    
+    }
+            
     
     
             

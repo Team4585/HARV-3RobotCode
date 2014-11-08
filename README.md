@@ -6,7 +6,7 @@
 
 [Husky Robotics Website](http://huskyrobotics.weebly.com/)
 
-The [Autonomous Developer Fork](https://github.com/orgs/HuskyRobotics/teams/autonomous-developers) and the [Operator Developer Fork](https://github.com/orgs/HuskyRobotics/teams/operation-developers) gets merged here!
+The [Developers](https://github.com/orgs/HuskyRobotics/teams/developers) That work on this code! Ask them anything!
 
 All Java code will be documented.
 
@@ -21,7 +21,7 @@ Have a question? ask anyone in [@HuskyRobotics/owners]() or Contact us at < ADD 
 ## *To Do List:*
 
 - [ ] Contact Information
-- [ ] First Push
+- [x] First Push
 - [ ] Branches
 - [ ] 2015 Kickoff!
 

@@ -11,7 +11,7 @@ import frc.team4585.robot.controller.RobotController;
  * 
  * @version v0.3 
  * @since 10/27/2014 
- * @author 
+ * @author Ivan Tachini @HuskyRobotics <Team 4585>
  */
 public class Autonomous 
 {
@@ -31,7 +31,7 @@ public class Autonomous
     
     /**
      *  When the Robot Enters Autonomous, this method is called. <br>
-  The while loop keeps updating the robot until the robot is no longer in Autonomous.
+     *  The while loop keeps updating the robot until the robot is no longer in Autonomous.
      */
     public void executeCode()
     {  

@@ -7,8 +7,7 @@
 Welcome to our repo! in here you will find our source code for our third year robot! All Java code will be documented 
 
 The master branch is our stable code we are using in our robot <br>
-The dev branch is where we make lots of changes <br>
-The dev-freeze branch is where we test all of the changes<br>
+The dev branch is where we make lots of changes and where we test all of the changes <br>
 
 Visit us at [Husky Robotics Website](http://huskyrobotics.weebly.com/)!
 

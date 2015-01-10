@@ -17,11 +17,11 @@ Have a question? ask anyone in [@HuskyRobotics/owners]() or Contact us!
 
 ### Team Leads Contact Info<br>
 Build / Design Team Lead: <b>Alex McDonald</b> <br>
-| Email | <br>
+allalallthetime@gmail.com <br>
 Business / Media Team Lead: <b>Mary Evans</b>  <br>
-| Email | <br>
+eyram123@gmail.com <br>
 Safety / Rules Team Lead:  <b>Abel Zarate</b>  <br>
-| Email | <br>
+Abel_Zarate@hotmail.com <br>
 Programming / Wiring Team Lead: <b> Ivan Tachini</b><br> 
 Silvertorch5@gmail.com <br>
 

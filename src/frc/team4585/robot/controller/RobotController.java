@@ -15,7 +15,7 @@ import frc.team4585.robot.view.HarveyDashboard;
  *
  * @author Ivan Tachini (@Husky Robotics <Team 4585> )
  * @version 0.4
- * @since 12/06/2014
+ * @since 1/10/2015
  */
 public class RobotController extends SampleRobot
 {
